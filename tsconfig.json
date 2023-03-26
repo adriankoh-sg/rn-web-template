@@ -1,0 +1,22 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "resolveJsonModule": true,
+  "allowSyntheticDefaultImports": true,
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"],
+      "tests": ["tests/*"],
+      "@navigation/*": ["./src/navigation/*"],
+      "@components/*": ["./src/components/*"],
+      "@views/*": ["./src/views/*"]
+    },
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "types": ["react", "react-native", "jest", "node"],
+    "isolatedModules": true
+  }
+}
